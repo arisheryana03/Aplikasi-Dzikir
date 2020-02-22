@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:text="Dalil Dzikir Pagi dan Petang"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:textStyle="italic"
+                android:textColor="@android:color/black"
+                android:text="Wahai orang-orang yang beriman! Ingatlah kepada Allah dengan mengingat (nama-Nya) sebanyak-banyaknya, dan bertasbihlah kepada-Nya di waktu pagi dan petang.\n(QS. Al-Ahzab [33]: 41-42)" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pagi_activity"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/linear"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="16dp"
+            android:padding="16dp"
+            app:cardBackgroundColor="@android:color/holo_green_dark"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Dzikir Pagi"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sore_activity"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/pagi_activity"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="16dp"
+            android:padding="16dp"
+            app:cardBackgroundColor="@android:color/holo_red_dark"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Dzikir Petang"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dzikir_sholat"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/sore_activity"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="25dp"
+            android:padding="16dp"
+            app:cardBackgroundColor="@android:color/holo_orange_dark"
+            app:cardCornerRadius="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Dzikir Setelah Sholat"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
